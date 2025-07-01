@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url(./images/body_game.jpg);
+    background-image: url(/images/body_game.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -200,4 +200,12 @@ body {
 
 .formulario button:hover {
     background-color: #3734a3;
+}
+.search {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif
 }
