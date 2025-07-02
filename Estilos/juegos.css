@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/body_game.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #050d47;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    gap: 8px;
+}
+
+.navbar__brand .color1 {
+    color: greenyellow;
+}
+
+.navbar__brand .color2 {
+    color: blue;
+}
+
+.navbar__brand .color3 {
+    color: rgb(220, 17, 162);
+}
+
+.navbar__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 25px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    display: block;
+    color: rgb(241, 228, 228);
+    padding: 1.1rem;
+}
+
+.navbar__link:hover {
+    color: rgb(221, 20, 20);
+}
+
+.search {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.main__content {
+    padding: 120px 20px 40px; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.juegos__catalogo {
+    background-image: url(/images/body_game.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:30px 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.juegos__catalogo__title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+.filtro__menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filtro__btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3e3efa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filtro__btn:hover {
+    background-color: #2b2bbd;
+}
+
+
+.catalogo__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.juego__card {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.juego__card:hover {
+    transform: scale(1.05);
+}
+
+.juego__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.juego__nombre {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #67e269;
+}
+
+.juego__descripcion {
+    font-size: 1rem;
+    color: #ddd;
+}
