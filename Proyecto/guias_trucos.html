@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guías y Trucos - Remagi Games</title>
+    <link rel="stylesheet" href="guias_trucos.css" />
+    <link rel="icon" href="../imagenes/remagi_icon.jpg" type="image/jpg" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img class="navbar__logo" src="../imagenes/remagi_logo.jpg" alt="remagi_logo" />
+                <span class="color1">Remagi</span>
+                <span class="color2"> Games</span>
+                <span class="color3"> Online</span>
+            </div>
+            <div class="navbar__menu">
+                <a href="inicio.html" class="navbar__link">Inicio</a>
+                <a href="juegos.html" class="navbar__link">Juegos</a>
+                <a href="../Noticias/noticias.html" class="navbar__link">Noticias</a>
+                <a href="../Comunidad/comunidad.html" class="navbar__link">Comunidad</a>
+                <a href="guias_trucos.html" class="navbar__link">Guías y Trucos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main__content">
+        <section class="guias__section">
+            <h2 class="guias__title">🧠 Guías y Trucos</h2>
+            <div class="tabs">
+                <button class="tab active" onclick="cambiarTab(event, 'guia')">📘 Guías</button>
+                <button class="tab" onclick="cambiarTab(event, 'truco')">🧪 Trucos</button>
+                <button class="tab" onclick="cambiarTab(event, 'comenta')">💬 Comentarios</button>
+                <button class="modo-toggle" onclick="toggleModo()">🌗 Modo</button>
+            </div>
+            <div id="guia" class="tab-content active">
+                <input type="text" id="buscador" placeholder="Buscar..." />
+                <div class="guia__grid">
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🎮 <span class="negrita">Fortnite</span></h3>
+                        <p>Domina la construcción avanzada, edición turbo y estrategias de zona para subir en competitivo.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">⚔️ <span class="negrita">Elden Ring</span></h3>
+                        <p>Encuentra rutas secretas, builds mágicas y cómo derrotar jefes como Malenia con eficiencia.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🏎 <span class="negrita">Mario Kart 8 Deluxe</span></h3>
+                        <p>Descubre combinaciones óptimas de kart, atajos en cada pista y técnicas de miniturbo.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🧙 <span class="negrita">Hogwarts Legacy</span></h3>
+                        <p>Hechizos, talentos, zonas secretas y cómo maximizar tu poder mágico desde el principio.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🪖 <span class="negrita">Warzone 2.0</span></h3>
+                        <p>Rotaciones, loot, UAVs, clases meta y cómo sobrevivir hasta el círculo final.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">💥 <span class="negrita">Brawl Stars</span></h3>
+                        <p>Estrategias por modo, builds recomendadas y los mejores brawlers para cada mapa.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🧟 <span class="negrita">Resident Evil 4 Remake</span></h3>
+                        <p>Ruta de mejoras, administración de recursos y secretos escondidos del castillo y aldeas.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">⚔️ <span class="negrita">Zelda: Tears of the Kingdom</span></h3>
+                        <p>Templos ocultos, combinaciones Zonai, y consejos para explorar sin morir en el intento.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🧌 <span class="negrita">League of Legends</span></h3>
+                        <p>Posicionamiento, builds por rol, visión avanzada y macrojuego en soloQ y teamplay.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🛸 <span class="negrita">Starfield</span></h3>
+                        <p>Exploración eficiente, personalización de naves y construcción de bases en planetas clave.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🧊 <span class="negrita">Minecraft</span></h3>
+                        <p>Guía completa de supervivencia, Nether, redstone, granjas automáticas y el End.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🕷 <span class="negrita">Spider-Man 2</span></h3>
+                        <p>Combos, gadgets, trajes ocultos y misiones secundarias que otorgan mejoras clave.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🧠 <span class="negrita">The Last of Us Part II</span></h3>
+                        <p>Gestión de recursos, exploración efectiva y cómo sobrevivir en dificultad realista.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">🏴‍☠️ <span class="negrita">Assassin's Creed Valhalla</span></h3>
+                        <p>Desbloquea habilidades, mejora tu asentamiento y descubre secretos nórdicos.</p>
+                    </div>
+                    <div class="guia__card">
+                        <h3 class="guia__titulo">💣 <span class="negrita">Valorant</span></h3>
+                        <p>Estrategias de ataque, defensa, uso de habilidades por agente y comunicación efectiva.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="truco" class="tab-content">
+                <ul class="trucos__lista">
+                    <li><span class="negrita">GTA V:</span> Escribe "TURTLE" para obtener vida y armadura al máximo.</li>
+                    <li><span class="negrita">Minecraft:</span> Coloca antorchas debajo de la arena para evitar daño por caída.</li>
+                    <li><span class="negrita">Zelda TOTK:</span> Usa combinación de armas con rocas para romper estructuras sin gastar bombas.</li>
+                    <li><span class="negrita">Call of Duty:</span> Dispara ráfagas cortas para mayor precisión a larga distancia.</li>
+                    <li><span class="negrita">Fortnite:</span> Coloca trampas en la entrada de tus construcciones al final de la partida para sorprender enemigos que rushean sin pensar.</li>
+                    <li><span class="negrita">Elden Ring:</span> Usa invocaciones espirituales para distraer a los jefes mientras atacas por detrás. Mejora primero tu lágrima mimética.</li>
+                    <li><span class="negrita">Mario Kart:</span> Haz “mini turbos” derrapando en curvas y acumula hasta el ultraturbo (azul) para ganar en pistas técnicas como Rainbow Road.</li>
+                    <li><span class="negrita">Warzone:</span> Lleva siempre munición extra y UAV. Al activar el UAV enemigo, ve a edificios altos y cambia tu posición constantemente.</li>
+                    <li><span class="negrita">League of Legends:</span> Si tu línea va mal, farmea bajo torre y rota con tu jungla para forzar 2v1 en otras líneas.</li>
+                    <li><span class="negrita">Hogwarts Legacy:</span> Usa Levioso en enemigos voladores antes de que te ataquen, y Combustion en trolls para debilitarlos rápidamente.</li>
+                    <li><span class="negrita">Brawl Stars:</span> Usa el arbusto para esconderte y atacar con emboscadas. Combina ataques de largo alcance con supers que controlen zona.</li>
+                    <li><span class="negrita">Resident Evil 4:</span> Dispara a las piernas de los enemigos para que se arrodillen y así puedas rematarlos con una patada para ahorrar balas.</li>
+                    <li><span class="negrita">Zelda TOTK:</span> Usa la Ultramano para lanzar explosivos desde lejos sin arriesgar corazones. Aprovecha combinaciones con el arco de zona.</li>
+                    <li><span class="negrita">Starfield:</span> En combates espaciales, apaga momentáneamente los escudos y redirígelos al motor para una fuga rápida.</li>
+                    <li><span class="negrita">League of Legends:</span> Wardea el río a minuto 3:20 para evitar ganks tempranos.</li>
+                </ul>
+            </div>
+
+            <div id="comenta" class="tab-content">
+                <form id="formComentario" class="comentario__form">
+                <input type="text" id="nombre" placeholder="Tu nombre" required />
+                <textarea id="comentario" placeholder="Escribe tu comentario aquí..." rows="4" required></textarea>
+                <button type="submit">Publicar Comentario</button>
+                </form>
+                <div id="comentarios" class="comentario__lista"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="guias_trucos.js"></script>
+</body>
+
+</html>
