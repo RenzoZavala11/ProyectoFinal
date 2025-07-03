@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url(/images/body_game.jpg);
+    background-image: url(../images/body_game.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -85,7 +85,7 @@ body {
 
 
 .juegos__catalogo {
-    background-image: url(/images/body_game.jpg);
+    background-image: url(../images/body_game.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
